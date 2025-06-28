@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portal BI - Gestão de Resultados</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      display: flex;
+      height: 100vh;
+    }
+    .sidebar {
+      width: 220px;
+      background-color: #333;
+      color: white;
+      padding: 20px;
+    }
+    .sidebar h2 {
+      margin-bottom: 30px;
+      font-size: 22px;
+    }
+    .sidebar ul {
+      list-style: none;
+    }
+    .sidebar ul li {
+      margin-bottom: 20px;
+      cursor: pointer;
+      transition: background 0.3s;
+      padding: 10px;
+    }
+    .sidebar ul li:hover {
+      background-color: #555;
+    }
+    .content {
+      flex: 1;
+      padding: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Portal BI</h2>
+    <ul>
+      <li onclick="irParaVisuais()">Ir para Visuais</li>
+      <li onclick="atualizarDados()">Atualizar dados</li>
+      <li onclick="sair()">Sair</li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h1>Bem-vindo ao Portal de Gestão de Resultados</h1>
+    <p>Aqui você verá os dados de BI e poderá interagir com seus relatórios.</p>
+  </div>
+
+  <script>
+    function irParaVisuais() {
+      alert("Redirecionar para os visuais...");
+      // Aqui você pode colocar: window.location.href = "visuais.html";
+    }
+
+    function atualizarDados() {
+      alert("Dados atualizados com sucesso!");
+    }
+
+    function sair() {
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>
